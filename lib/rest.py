@@ -247,6 +247,9 @@ class RestGraphqlApi(object):
     def get_config(self, config_store="running"):
         return self.get(f"/config/{config_store}").json()
 
+    def revert_config(self):
+        return self.post("/config/revertToRunning", json=None)
+
     def get_router_status(self, router_name):
         self.get_assets()
         statuses = []
