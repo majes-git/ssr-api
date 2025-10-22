@@ -4,7 +4,7 @@ import pathlib
 import requests
 import time
 
-from lib.log import *
+from api.lib.log import *
 
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
